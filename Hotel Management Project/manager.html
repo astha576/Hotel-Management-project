@@ -1,0 +1,183 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Dashboard - Luxury Hotel Bengal</title>
+    <link rel="stylesheet" href="manager.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="dinning.html">Dining</a></li>
+                <li><a href="eventsmanager.html">Events</a></li>
+                <li><a href="spamanager.html">Spa</a></li>
+                <li><a href=""onclick="contact()">Contact</a></li>
+                <li><a href="project.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Manager Dashboard</h1>
+            <p>Manage hotel operations with ease.</p>
+        </div>
+    </section>
+
+    <section class="dashboard">
+        <h2>Manage Hotel Operations</h2>
+        <div class="dashboard-items">
+            <div class="dashboard-item">
+                <h3>View Bill</h3>
+                <button onclick="viewBill()">View</button>
+                <div id="billDetails" class="details"></div>
+            </div>
+            <div class="dashboard-item">
+                <h3>Enquiry & Feedback</h3>
+                <button onclick="viewEnquiryFeedback()">View</button>
+                <div id="enquiryFeedbackDetails" class="details"></div>
+            </div>
+            <div class="dashboard-item">
+                <h3>Update Room Availability & Tariff</h3>
+                <input type="text" id="roomNumber" placeholder="Room Number">
+                <input type="text" id="availability" placeholder="Availability">
+                <input type="text" id="tariff" placeholder="Tariff">
+                <button onclick="updateRoom()">Update</button>
+                <div id="updateStatus" class="details"></div>
+            </div>
+            <div class="dashboard-item">
+                <h3>Generate Monthly Report</h3>
+                <button onclick="generateReport()">Generate</button>
+                <div id="reportDetails" class="details"></div>
+            </div>
+            <div class="dashboard-item">
+                <h3>Manage User Services</h3>
+                <button onclick="manageUserServices()">Manage</button>
+                <div id="userServiceDetails" class="details"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Luxury Hotel Bengal. All rights reserved.</p>
+        <p>Contact us at abc@grandhotels.in</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <script src="manager.js"></script>
+</body>
+</html>
+ -->
+
+
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Manager Dashboard - Luxury Hotel Bengal</title>
+     <link rel="stylesheet" href="manager.css">
+     <script src="https://unpkg.com/scrollreveal"></script>
+ </head>
+ <body>
+     <header>
+         <nav>
+             <ul>
+                 <li><a href="project.html">Home</a></li>
+                 <li><a href="rooms.html">Rooms</a></li>
+                 <li><a href="dinning.html">Dining</a></li>
+                 <li><a href="eventsmanager.html">Events</a></li>
+                 <li><a href="spamanager.html">Spa</a></li>
+                 <li><a href="#" onclick="contact()">Contact</a></li>
+                 <li><a href="project.html">Logout</a></li>
+             </ul>
+         </nav>
+     </header>
+ 
+     <section class="hero">
+         <div class="hero-content">
+             <h1>Manager Dashboard</h1>
+             <p>Manage hotel operations with ease.</p>
+         </div>
+     </section>
+ 
+     <section class="dashboard">
+         <h2>Manage Hotel Operations</h2>
+         <div class="dashboard-items">
+             <!-- View Bill -->
+             <div class="dashboard-item">
+                 <h3>View Bill</h3>
+                 <button onclick="viewBill()">View</button>
+                 <div id="billDetails" class="details"></div>
+             </div>
+ 
+             <!-- Enquiry & Feedback -->
+             <div class="dashboard-item">
+                 <h3>Enquiry & Feedback</h3>
+                 <button onclick="viewEnquiryFeedback()">View</button>
+                 <div id="enquiryFeedbackDetails" class="details"></div>
+             </div>
+ 
+             <!-- Update Room Availability & Tariff -->
+             <div class="dashboard-item">
+                 <h3>Update Room Availability & Tariff</h3>
+                 <input type="text" id="roomNumber" placeholder="Room Number">
+                 <input type="text" id="availability" placeholder="Availability">
+                 <input type="text" id="tariff" placeholder="Tariff">
+                 <button onclick="updateRoom()">Update</button>
+                 <div id="updateStatus" class="details"></div>
+             </div>
+ 
+             <!-- Generate Monthly Report -->
+             <div class="dashboard-item">
+                 <h3>Generate Monthly Report</h3>
+                 <label for="reportMonth">Select Month:</label>
+                 <select id="reportMonth">
+                     <option value="">--Select Month--</option>
+                     <option value="November">November</option>
+                     <option value="December">December</option>
+                 </select>
+                 <button onclick="generateReport()">Generate</button>
+                 <div id="reportDetails" class="details"></div>
+             </div>
+ 
+             <!-- Manage User Services -->
+             <div class="dashboard-item">
+                 <h3>Manage User Services</h3>
+                 <label for="serviceType">Select Service:</label>
+                 <select id="serviceType">
+                     <option value="">--Select Service--</option>
+                     <option value="Events">Events</option>
+                     <option value="Spa">Spa</option>
+                 </select>
+                 <br>
+                 <label for="serviceUpdate">Update Service:</label>
+                 <input type="text" id="serviceUpdate" placeholder="Enter update details">
+                 <button onclick="manageUserServices()">Manage</button>
+                 <div id="userServiceDetails" class="details"></div>
+             </div>
+         </div>
+     </section>
+ 
+     <footer>
+         <p>&copy; 2024 Luxury Hotel Bengal. All rights reserved.</p>
+         <p>Contact us at abc@grandhotels.in</p>
+         <ul>
+             <li><a href="#">Privacy Policy</a></li>
+             <li><a href="#">Terms of Service</a></li>
+         </ul>
+     </footer>
+ 
+     <script src="manager.js"></script>
+ </body>
+ </html>
+ 

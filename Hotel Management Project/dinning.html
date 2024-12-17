@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining Section - Luxury Hotel</title>
+    <link rel="stylesheet" href="dinning.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="project.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="spa.html">Spa</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <li><a href="project.html">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="dining-hero">
+    <div class="option">
+        <img src="https://img.pikbest.com/ai/illus_our/20230530/fac908cceb9193f32348ab42e3d89773.jpg!w700wp">
+        <a href="book_dinning_hall.html"><button class="btn-15"><span>Book Dining Hall</span></button>
+        </a>        
+    </div>
+    <div class="option">
+        <img src="https://static1.squarespace.com/static/5a74702ce45a7cd601df944b/t/608138590539ac45c06ece8d/1619081340829/hotel-room-service.jpg?format=1500w">
+        <button class="btn-15" onclick="openRoomServiceModal()"><span>Room Service</span></button>
+    </div>
+    <!-- <section class="room-service">
+        <h2>Room Service Option</h2>
+        <div class="option">
+            <img src="https://static1.squarespace.com/static/5a74702ce45a7cd601df944b/t/608138590539ac45c06ece8d/1619081340829/hotel-room-service.jpg?format=1500w" alt="Room Service Image">
+            <button class="btn-15" onclick="openRoomServiceModal()">Order Room Service</button>
+        </div>
+    </section> -->
+    
+    <!-- Room Service Modal -->
+    <div id="roomServiceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRoomServiceModal()">&times;</span>
+            <h3>Would you like food delivery to your room?</h3>
+            <div class="modal-buttons">
+                <button onclick="confirmRoomService(true)">Yes</button>
+                <button onclick="confirmRoomService(false)">No</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu">
+    <h2>OUR MENU</h2>
+
+    <!-- Breakfast Section -->
+    <div class="menu-section">
+        <h3>Breakfast</h3>
+        <div class="food-items">
+            <div class="food-item">
+                <img src="https://content.jdmagicbox.com/v2/comp/kolkata/w6/033pxx33.xx33.231108080547.d5w6/catalogue/petuk-bengali-sarat-bose-road-kolkata-take-away-joints-3hmf7eda6h.jpg" alt="Food 1">
+                <p>Bengali Platter</p>
+                <p>Price: ₹200</p>
+                <button onclick="addToCart('Bengali Platter', 200)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://hotelsandhoteliers.com/wp-content/uploads/2023/12/Amrican-Breakfast.jpeg" alt="Food 2">
+                <p>English Platter</p>
+                <p>Price: ₹250</p>
+                <button onclick="addToCart('English Platter', 250)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2016/05/south-indian-feature.jpg" alt="Food 3">
+                <p>South Indian Platter</p>
+                <p>Price: ₹150</p>
+                <button onclick="addToCart('South Indian Platter', 150)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://www.dessertfortwo.com/wp-content/uploads/2023/08/Pancake-Recipe-14-720x540.jpg" alt="Pancakes">
+                <p>Pancakes</p>
+                <p>Price: ₹120</p>
+                <button onclick="addToCart('Pancakes', 120)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://i2.wp.com/highlandsranchfoodie.com/wp-content/uploads/2023/11/western-omelette-12.jpg" alt="Omelette">
+                <p>Omelette</p>
+                <p>Price: ₹80</p>
+                <button onclick="addToCart('Omelette', 80)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://t3.ftcdn.net/jpg/01/47/96/74/360_F_147967456_0BNPgG5w1ZXuzeNgMJEqPdHwt9s8cS8S.jpg" alt="Toast with Jam">
+                <p>Toast with Jam</p>
+                <p>Price: ₹50</p>
+                <button onclick="addToCart('Toast with Jam', 50)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://images.themodernproper.com/billowy-turkey/production/posts/2021/Smoothie-Bowl-8.jpeg?w=960&h=960&q=82&fm=jpg&fit=crop&dm=1641225383&s=139a98620a1c262e385ffe030a55cbc2" alt="Smoothie Bowl">
+                <p>Smoothie Bowl</p>
+                <p>Price: ₹150</p>
+                <button onclick="addToCart('Smoothie Bowl', 150)">Add to Cart</button>
+            </div>        
+        </div>
+    </div>
+
+    <!-- Lunch Section -->
+    <div class="menu-section">
+        <h3>Lunch</h3>
+        <div class="food-items">
+            <div class="food-item">
+                <img src="https://images.jdmagicbox.com/quickquotes/listicle/listicle_1697691744471_dl8q2_1379x1080.jpg" alt="Food 4">
+                <p>Bengali Thali</p>
+                <p>Price: ₹300</p>
+                <button onclick="addToCart('Bengali Thali', 300)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://tehelka.news/wp-content/uploads/2019/03/ef.jpg" alt="Food 5">
+                <p>Dal Bati Churma Thali</p>
+                <p>Price: ₹350</p>
+                <button onclick="addToCart('Dal Bati Churma Thali', 350)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://content.jdmagicbox.com/v2/comp/chennai/p7/044pxx44.xx44.160620114025.p1p7/catalogue/kollywood-restaurant-alandur-st-thomas-mount-chennai-restaurants-374rs0q.jpg" alt="Food 6">
+                <p>South Indian Thali</p>
+                <p>Price: ₹250</p>
+                <button onclick="addToCart('South Indian Thali', 250)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://www.licious.in/blog/wp-content/uploads/2022/06/chicken-hyderabadi-biryani-01.jpg" alt="Biryani">
+                <p>Chicken Biryani</p>
+                <p>Price: ₹220</p>
+                <button onclick="addToCart('Biryani', 220)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://www.midwestliving.com/thmb/g53IjvD7AYKxeFR7wwZug3ZRGHQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/101497359-2_smokin-grand-slam-sandwich.pg-b3c15f5251344e08b2530ff8c230b704.jpg" alt="Grilled Sandwich">
+                <p>Grilled Sandwich</p>
+                <p>Price: ₹90</p>
+                <button onclick="addToCart('Grilled Sandwich', 90)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://assets.epicurious.com/photos/5988e3458e3ab375fe3c0caf/1:1/w_3607,h_3607,c_limit/How-to-Make-Chicken-Alfredo-Pasta-hero-02082017.jpg" alt="Pasta">
+                <p>Pasta</p>
+                <p>Price: ₹200</p>
+                <button onclick="addToCart('Pasta', 200)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://themovementmenu.com/wp-content/uploads/2021/04/Healthy-Greek-Chicken-Salad-.jpg" alt="Salad">
+                <p>Chicken Salad</p>
+                <p>Price: ₹100</p>
+                <button onclick="addToCart('Salad', 100)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dinner Section -->
+    <div class="menu-section">
+        <h3>Dinner</h3>
+        <div class="food-items">
+            <div class="food-item">
+                <img src="https://www.cookerru.com/wp-content/uploads/2022/09/pan-fried-noodles-main-preview.jpg" alt="Food 7">
+                <p>Noodles</p>
+                <p>Price: ₹180</p>
+                <button onclick="addToCart('Noodles', 180)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://static.wixstatic.com/media/597497_39dfa709d3d845eeaf43eb692e93b31b~mv2.jpg/v1/fill/w_642,h_502,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-empty-state.jpg" alt="Food 8">
+                <p>Pizza</p>
+                <p>Price: ₹300</p>
+                <button onclick="addToCart('Pizza', 300)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://media.istockphoto.com/id/1373284422/photo/indian-creamy-butter-chicken-curry-with-paratha-bread-served-in-copper-bowl.jpg?s=612x612&w=0&k=20&c=IWAazmZISM4sOqLyaJRko6AOB0DEt1SmakSdQLN382Y=" alt="Food 9">
+                <p>Naan & Butter Chicken</p>
+                <p>Price: ₹400</p>
+                <button onclick="addToCart('Naan & Butter Chicken', 400)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://www.allrecipes.com/thmb/UgUZpaTRGWIHEk57yWMhMEjffiY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/16160-juicy-grilled-chicken-breasts-ddmfs-5594-hero-3x4-902673c819994c0191442304b40104af.jpg" alt="Grilled Chicken">
+                <p>Grilled Chicken</p>
+                <p>Price: ₹280</p>
+                <button onclick="addToCart('Grilled Chicken', 280)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://i.ytimg.com/vi/qstxR_Jh4aY/maxresdefault.jpg" alt="Fish Curry">
+                <p>Fish Curry</p>
+                <p>Price: ₹300</p>
+                <button onclick="addToCart('Fish Curry', 300)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgPLI2SAwE7I-9JxHBe3CV56yGOVY1PWBQ9A&s" alt="Paneer Tikka">
+                <p>Paneer Tikka</p>
+                <p>Price: ₹180</p>
+                <button onclick="addToCart('Paneer Tikka', 180)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://khaddoroshik.com/wp-content/uploads/2024/06/galouti-kebab-recipe.jpg" alt="Galouti Kebabs">
+                <p>Galouti Kebabs</p>
+                <p>Price: ₹350</p>
+                <button onclick="addToCart('Lamb Kebabs', 350)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Snacks Section -->
+    <div class="menu-section">
+        <h3>Snacks</h3>
+        <div class="food-items">
+            <div class="food-item">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/5/21081595/1d9f472ded378a7e43035f0fb24f2afa.jpg?fit=around|960:500&crop=960:500;*,*" alt="Food 10">
+                <p>Momo</p>
+                <p>Price: ₹100</p>
+                <button onclick="addToCart('Momo', 100)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://content.jdmagicbox.com/comp/def_content/fast-food/5-fast-food-6-s5xb0.jpg" alt="Food 11">
+                <p>Samosa</p>
+                <p>Price: ₹50</p>
+                <button onclick="addToCart('Samosa', 50)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://campbellsalton.co.uk/img/fish_532161043.jpg" alt="Food 12">
+                <p>Fish & Chips</p>
+                <p>Price: ₹150</p>
+                <button onclick="addToCart('Fish & Chips', 150)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://thumbs.dreamstime.com/b/taste-barger-generative-ai-306636772.jpg" alt="Burger">
+                <p>Burger</p>
+                <p>Price: ₹120</p>
+                <button onclick="addToCart('Burger', 120)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLetnQTeyzm8StHzS_UpZDjW5m9M1uP4uPxg&s" alt="French Fries">
+                <p>French Fries</p>
+                <p>Price: ₹80</p>
+                <button onclick="addToCart('French Fries', 80)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://myspicetrunk.com/wp-content/uploads/2021/01/20210103_1850053.jpg?v=1613929685" alt="Spring Rolls">
+                <p>Spring Rolls</p>
+                <p>Price: ₹100</p>
+                <button onclick="addToCart('Spring Rolls', 100)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://kristineskitchenblog.com/wp-content/uploads/2022/03/crispy-air-fryer-onion-rings-recipe-0775-500x500.jpg" alt="Onion Rings">
+                <p>Onion Rings</p>
+                <p>Price: ₹70</p>
+                <button onclick="addToCart('Onion Rings', 70)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Drinks Section -->
+    <div class="menu-section">
+        <h3>Drinks</h3>
+        <div class="food-items">
+            <div class="food-item">
+                <img src="https://static.wixstatic.com/media/b8ebd8_6f775d43af914e02a3c6e3c9cf41c861~mv2.webp/v1/fill/w_1024,h_1024,al_c/b8ebd8_6f775d43af914e02a3c6e3c9cf41c861~mv2.webp" alt="Drink 1">
+                <p>Tea</p>
+                <p>Price: ₹30</p>
+                <button onclick="addToCart('Tea', 30)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://www.netmeds.com/images/cms/wysiwyg/blog/Post/2018/10/coffee_its_benefits_898_1_.jpg" alt="Drink 2">
+                <p>Coffee</p>
+                <p>Price: ₹50</p>
+                <button onclick="addToCart('Coffee', 50)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://img.freepik.com/premium-photo/fruit-juice-glass-fruits-isolated-white_636537-147044.jpg" alt="Drink 3">
+                <p>Fruit Juice</p>
+                <p>Price: ₹80</p>
+                <button onclick="addToCart('Fruit Juice', 80)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://i0.wp.com/thejoyfilledkitchen.com/wp-content/uploads/2021/04/Lemonade-2-2.jpg?resize=740%2C792&ssl=1" alt="Lemonade">
+                <p>Lemonade</p>
+                <p>Price: ₹50</p>
+                <button onclick="addToCart('Lemonade', 50)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://files.selecthealth.cloud/api/public/content/221561-Strawberry_smoothie_blog_lg.jpg" alt="Smoothie">
+                <p>Smoothie</p>
+                <p>Price: ₹100</p>
+                <button onclick="addToCart('Smoothie', 100)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://preppykitchen.com/wp-content/uploads/2023/09/Long-Island-Iced-Tea-Recipe-Card.jpg" alt="Iced Tea">
+                <p>Iced Tea</p>
+                <p>Price: ₹70</p>
+                <button onclick="addToCart('Iced Tea', 70)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <img src="https://amritfood.com/wp-content/uploads/2021/11/Cold-Coffee.png" alt="Cold Coffee">
+                <p>Cold Coffee</p>
+                <p>Price: ₹80</p>
+                <button onclick="addToCart('Cold Coffee', 80)">Add to Cart</button>
+            </div>
+
+            <div class="cart-summary">
+                <h3>Your Cart</h3>
+                <ul id="cart-items">
+                    <!-- Cart items will be added here dynamically -->
+                </ul>
+                <p>Total Amount: ₹<span id="total-amount">0</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer id="footer">
+    <p>&copy; 2024 Luxury Hotel Bengal. All rights reserved.</p>
+    <p>Contact us at abc@grandhotels.in</p>
+    <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+    </ul>
+</footer>
+
+<script src="dinning.js"></script>
+
+</body>
+</html>

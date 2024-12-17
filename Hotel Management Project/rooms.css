@@ -1,0 +1,170 @@
+/* Main Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.pinimg.com/564x/ed/23/89/ed2389a5df22066c095c10f098f2dde9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background: transparent;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #966919;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Hero Section with Slideshow */
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-slideshow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+.hero-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: black;
+    text-shadow: 2px 2px 4px #FFFFFF;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: black;
+    text-shadow: 2px 2px 4px #FFFFFF;
+}
+
+/* Rooms Section */
+.rooms {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #966919;
+}
+
+.rooms h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #966919;
+}
+
+.room-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.room {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.room img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.room h3 {
+    font-size: 1.5rem;
+    color: #966919;
+    margin-bottom: 0.5rem;
+}
+
+.room p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Button Styling */
+.btn-15 {
+    background-color: #966919;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 99rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+
+.btn-15:hover {
+    background-color: #c4a484;
+}
+
+.btn-15 span {
+    position: relative;
+    z-index: 2;
+}
+
+/* Footer */
+footer {
+    background-color: #966919;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}

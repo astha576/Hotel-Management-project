@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.pinimg.com/564x/ed/23/89/ed2389a5df22066c095c10f098f2dde9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: transparent;
+    padding: 10px;
+    text-align: center;
+    color: #C4A484;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.navbar a {
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: #C4A484;
+    color: white;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background: transparent;
+}
+
+section {
+    background: transparent;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+section h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+section p{
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+section label{
+    color: black;
+    text-shadow: 2px 2px 4px #FFFFFF;
+}
+.welcome{
+    background-image: url('https://images.unsplash.com/photo-1565031491910-e57fac031c41?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #966919;
+    text-align: center;
+    padding: 200px 0;
+}
+.welcome h1{
+    color: black;
+}
+.welcome p{
+    color: black;
+}
+
+section h2 {
+    color: #966919;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #966919;
+}
+
+button {
+    background-color: white;
+    color: #C4A484;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #966919;
+}
+
+footer {
+    background-color: #966919;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

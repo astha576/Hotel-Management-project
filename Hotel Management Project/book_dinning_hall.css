@@ -1,0 +1,166 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.pinimg.com/564x/ed/23/89/ed2389a5df22066c095c10f098f2dde9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background: transparent;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #966919;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    background-color: #f7c546;
+}
+
+/* Greeting Section with Image */
+.greeting {
+    background: url('https://images.unsplash.com/photo-1558998708-ed5f8eaf1af1?q=80&w=2052&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    height: 80vh;
+    color: #966919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.greeting-content {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: rgb(255, 255, 255);
+    text-shadow: #333;
+}
+
+.greeting-img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.greeting-text h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.greeting-text p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #000;
+    text-shadow: 2px 2px 4px white;
+}
+
+/* Halls Section */
+.halls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px 100px;
+    padding: 100px;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+.hall {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 60px;
+    width: 50%;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hall img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.hall h3 {
+    font-size: 1.2em;
+    color: #8b572a;
+}
+
+.hall p {
+    font-size: 1em;
+    color: #333;
+    margin: 0.5em 0;
+}
+
+.hall {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hall:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hall button:hover {
+    background-color: #f7c546; /* Slight color change for button on hover */
+}
+
+
+
+.btn-15 {
+    background-color: #966919;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 99rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-15:hover {
+    background-color: #c4a484;
+}
+
+.btn-15 span {
+    position: relative;
+    z-index: 2;
+}
+
+/* Footer */
+footer {
+    background-color: #966919;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}

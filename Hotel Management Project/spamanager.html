@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Spa Services - Luxury Hotel Bengal</title>
+    <link rel="stylesheet" href="spamanager.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="dinning.html">Dining</a></li>
+                <li><a href="eventsmanager.html">Events</a></li>
+                <!-- <li><a href="spamanager.html">Spa</a></li> -->
+                <li><a href="project.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Manage Spa Services</h1>
+            <p>Edit the details of spa treatments</p>
+        </div>
+    </section>
+
+    <section class="spa-services">
+        <h2>Spa Treatments</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <input type="text" class="title" value="Full Body Massage">
+                <textarea class="description">Relieve stress and tension with a relaxing full body massage.</textarea>
+                <button onclick="saveService(this)">Save Changes</button>
+            </div>
+            <div class="service-card">
+                <input type="text" class="title" value="Aromatherapy">
+                <textarea class="description">Enjoy a sensory journey with our soothing essential oil blends.</textarea>
+                <button onclick="saveService(this)">Save Changes</button>
+            </div>
+            <div class="service-card">
+                <input type="text" class="title" value="Facial Treatment">
+                <textarea class="description">Revitalize your skin with our signature facial treatment.</textarea>
+                <button onclick="saveService(this)">Save Changes</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Luxury Hotel Bengal. All rights reserved.</p>
+        <p>Contact us at abc@grandhotels.in</p>
+    </footer>
+
+    <script src="spa_manager.js"></script>
+</body>
+</html>

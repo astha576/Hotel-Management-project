@@ -1,0 +1,136 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0e6d2;
+    color: #333;
+    background-image: url('https://i.pinimg.com/564x/ed/23/89/ed2389a5df22066c095c10f098f2dde9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Navigation */
+header {
+    background-color: #333;
+    padding: 1rem;
+    background: transparent;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #966919;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+
+    background-image: url('https://images.unsplash.com/photo-1546484458-6904289cd4f0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Events Section */
+.events {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f0e6d2;
+}
+
+.events h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #5d4212;
+}
+
+.event-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background: #f9f3e4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    margin: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.event-card h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.event-card p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.event-card button {
+    background: #966919;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.event-card button:hover {
+    background: #333;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background-color: #966919;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}

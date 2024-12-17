@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="guest.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div id="content">
+        <header>
+            <h1>Welcome to Luxury Hotel - Bengal Booking Page</h1>
+            <nav>
+                <ul>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="#writeFeedback" onclick="requestAccess('feedback')">Write Feedback</a></li>
+                    <li><a href="#viewBill" onclick="requestAccess('bill')">View Bill</a></li>
+                    <li><a href="#useService" onclick="requestAccess('service')">Use Service</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="spa.html">Spa</a></li>
+                    <li><a href="#payment" onclick="payment()">Payment</a></li>
+                    <li><a href="#cancel" onclick="cancel()">Cancel</a></li>
+                    <li><a href="project.html">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="booking">
+            <h2>Book a Room</h2>
+            <form id="bookingForm">
+                <label for="checkin">Check-In Date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+                
+                <label for="checkout">Check-Out Date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+                
+                <label for="roomType">Room Type:</label>
+                <select id="roomType" name="roomType" required>
+                    <option value="single">Standard Room</option>
+                    <option value="double">Deluxe Room</option>
+                    <option value="suite">Luxury Suite</option>
+                </select>
+                
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" max="10" required>
+                
+                <button type="button" onclick="submitBooking()">Book Now</button>
+            </form>
+
+            <div id="bookingSuccess">Booking successful! Thank you for choosing Luxury Hotel.</div>
+        </section>
+
+        <form id="feedbackForm" class="feature-form" onsubmit="displayAlert(event, 'Feedback submitted!')">
+            <h2>Write Feedback</h2>
+            <label for="feedbackName">Name:</label>
+            <input type="text" id="feedbackName" name="feedbackName" required>
+            
+            <label for="feedbackMessage">Feedback:</label>
+            <textarea id="feedbackMessage" name="feedbackMessage" required></textarea>
+            
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <form id="billForm" class="feature-form" onsubmit="displayAlert(event, 'Bill will be generated soon!')">
+            <h2>View Bill</h2>
+            <label for="billName">Name:</label>
+            <input type="text" id="billName" name="billName" required>
+            
+            <label for="billRoom">Room Number:</label>
+            <input type="number" id="billRoom" name="billRoom" required>
+            
+            <button type="submit">View Bill</button>
+        </form>
+
+        <form id="serviceForm" class="feature-form" onsubmit="displayAlert(event, 'Service request submitted!')">
+            <h2>Use Service</h2>
+            <label for="serviceName">Name:</label>
+            <input type="text" id="serviceName" name="serviceName" required>
+            
+            <label for="serviceRequest">Service Request:</label>
+            <select id="serviceRequest" name="serviceRequest" required>
+                <option value="" disabled selected>Select a Service</option>
+                <option value="dinning.html">Dining</option>
+                <option value="spa.html">Spa</option>
+                <option value="events.html">Events</option>
+            </select>
+
+            <button type="submit">Request Service</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hotel Management System. All Rights Reserved.</p>
+        <p>Contact us at abc@grandhotels.in</p>
+    </footer>
+
+    <script src="guest.js"></script>
+</body>
+</html>

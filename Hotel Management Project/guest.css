@@ -1,0 +1,128 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1495365200479-c4ed1d35e1aa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#content {
+    flex: 1;
+}
+
+header {
+    background: transparent;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    text-shadow: #000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #c9e3e0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #966919;
+    margin-top: 0;
+}
+
+form {
+    background: transparent;
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #fff;
+}
+
+input, select, textarea, button {
+    padding: 10px;
+    border: 1px solid #C4A484;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input, select, textarea {
+    width: 100%;
+}
+
+button {
+    background-color: #fff;
+    color: #C4A484;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #966919;
+    color: #fff;
+}
+
+.feature-form {
+    display: none;
+    display: none;
+    grid-gap: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    background: transparent;
+}
+
+.error-message {
+    font-size: 14px;
+    color: red;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #966919;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#bookingSuccess {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #966919;
+    background-color: #966919;
+    color: #fff;
+    font-weight: bold;
+}

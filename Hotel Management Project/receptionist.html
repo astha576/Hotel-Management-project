@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptionist - Hotel Management System</title>
+    <link rel="stylesheet" href="receptioniststyle.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <a href="#home">Home</a>
+                <a href="#search-rooms">Search Rooms</a>
+                <a href="#authentication">Customer ID Authentication</a>
+                <a href="#billing">Billing</a>
+                <a href="#checkin-checkout">Check-In/Check-Out</a>
+                <a href="project.html">Logout</a>
+            </div>
+        </header>
+        <main>
+            <section id="home">
+                <div class="welcome">
+                    <h1>Welcome, Receptionist</h1>
+                    <p>Manage hotel operations efficiently.</p>
+                </div>
+            </section>
+            <section id="search-rooms">
+                <h2>Search Rooms and Manage Reservations</h2>
+                <form action="#">
+                    <label for="room-type">Room Type:</label>
+                    <select id="room-type" name="room-type">
+                        <option value="single">Single</option>
+                        <option value="double">Double</option>
+                        <option value="suite">Suite</option>
+                    </select>
+
+                    <label for="checkin-date">Check-In Date:</label>
+                    <input type="date" id="checkin-date" name="checkin-date" required>
+
+                    <label for="checkout-date">Check-Out Date:</label>
+                    <input type="date" id="checkout-date" name="checkout-date" required>
+
+                    <button type="submit">Search</button>
+                </form>
+            </section>
+            <section id="authentication">
+                <h2>Customer ID Authentication</h2>
+                <form action="#">
+                    <label for="customer-id">Customer ID:</label>
+                    <input type="text" id="customer-id" name="customer-id" required>
+
+                    <button type="submit">Authenticate</button>
+                </form>
+            </section>
+            <section id="billing">
+                <h2>Billing Management</h2>
+                <p>Generate and manage customer bills here.</p>
+            </section>
+            <section id="checkin-checkout">
+                <h2>Manage Room Check-In and Check-Out</h2>
+                <form action="#">
+                    <label for="room-number">Room Number:</label>
+                    <input type="text" id="room-number" name="room-number" required>
+
+                    <label for="checkin">Check-In/Check-Out:</label>
+                    <select id="checkin" name="checkin">
+                        <option value="checkin">Check-In</option>
+                        <option value="checkout">Check-Out</option>
+                    </select>
+
+                    <button type="submit">Proceed</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Hotel Management System. All Rights Reserved.</p>
+            <p>Contact us at abc@grandhotels.in</p>
+        </footer>
+    </div>
+    <script src="receptionist.js"></script>
+</body>
+</html>

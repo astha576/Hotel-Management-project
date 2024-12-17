@@ -1,0 +1,303 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.pinimg.com/564x/ed/23/89/ed2389a5df22066c095c10f098f2dde9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background: transparent;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #966919;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    background-color: #f7c546;
+}
+
+/* Dining Hero Section with Side-by-Side Layout */
+.dining-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px; /* Space between the two options */
+    padding: 2em;
+    background-color:#C4A484;
+}
+
+.option {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 40px;
+    width: 50%;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.option img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.btn-15 {
+    background-color: #966919;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 99rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-15:hover {
+    background-color: #c4a484;
+}
+
+.btn-15 span {
+    position: relative;
+    z-index: 2;
+}
+
+/* Menu Section */
+.menu {
+    padding: 2em;
+    background-color: transparent;
+    color: #8b572a;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #8b572a;
+    margin-bottom: 1em;
+}
+
+.menu-section h3 {
+    font-size: 1.5em;
+    color: #8b572a;
+    border-bottom: 2px solid #d4b083;
+    padding-bottom: 0.5em;
+    margin-top: 1.5em;
+}
+
+/* Food items displayed side by side */
+.food-items {
+    display: flex;
+    gap: 15px; /* Space between food items */
+    overflow-x: auto;
+    padding-top: 1em;
+}
+
+.food-item {
+    flex: 0 0 160px; /* Fixed width for each food item */
+    text-align: center;
+    padding: 1em;
+    background-color: #f7f1e3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.food-item p {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Cart Summary Section */
+.cart-summary {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    width: 300px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#cart-items li {
+    margin-bottom: 5px;
+}
+
+#total-amount {
+    font-weight: bold;
+}
+
+/* Button styling */
+button {
+    background-color: #966919;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 99rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+
+button:hover {
+    background-color: #966919;
+}
+
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Styling for the Room Service section */
+.room-service {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.room-service img {
+    width: 50%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.btn-15 {
+    background-color: #966919;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 99rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+
+.btn-15:hover {
+    background-color: #966919;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Buttons */
+.modal-buttons button {
+    background-color: #966919;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 99rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+
+.modal-buttons button:hover {
+    background-color: #966919;
+}
+
+
+footer {
+    background-color: #966919;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+

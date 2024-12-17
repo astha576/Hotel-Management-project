@@ -1,0 +1,358 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.pinimg.com/564x/ed/23/89/ed2389a5df22066c095c10f098f2dde9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+header nav {
+    background: transparent;
+    padding: 15px;
+
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #966919;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    color: #966919;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.dashboard {
+    padding: 50px 20px;
+    background:transparent;
+    text-align: center;
+}
+
+.dashboard h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.dashboard-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: transparent;
+    
+}
+.dashboard-item {
+    background:transparent;
+    border: 1px solid #10101065;
+    box-shadow: 0 0 10px rgba(28, 28, 28, 0.174);
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.dashboard-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #966919;
+}
+
+.dashboard-item button, .dashboard-item input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #966919;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: white;
+    color: #C4A484;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #966919;
+}
+
+.details {
+    display: none;
+    margin-top: 10px;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #966919;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+} */
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.pinimg.com/564x/ed/23/89/ed2389a5df22066c095c10f098f2dde9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+header nav {
+    background: transparent;
+    padding: 15px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #966919;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    color: #966919;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.dashboard {
+    padding: 50px 20px;
+    background-image: url('https://i.pinimg.com/564x/ed/23/89/ed2389a5df22066c095c10f098f2dde9.jpg');
+    text-align: center;
+}
+
+.dashboard h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #966919;
+}
+
+.dashboard-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: transparent;
+}
+
+.dashboard-item {
+    background-color: transparent;
+    border: 1px solid #10101065;
+    box-shadow: 0 0 10px rgba(28, 28, 28, 0.174);
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.dashboard-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #966919;
+}
+
+.dashboard-item button, 
+.dashboard-item input, 
+.dashboard-item select, 
+.dashboard-item label {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #966919;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+
+button {
+    background-color: white;
+    color: #C4A484;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #966919;
+    color: white;
+}
+
+.details {
+    display: none;
+    margin-top: 10px;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 4px;
+    color: #555;
+}
+
+footer {
+    background-color: #966919;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Specific styling for dropdowns and new inputs */
+.dashboard-item select {
+    background-color: #ffffff;
+    color: #966919;
+}
+
+.dashboard-item select:focus {
+    outline: none;
+    border-color: #C4A484;
+}
+
+.dashboard-item label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Specific styling for generated reports and updated service messages */
+.details.success {
+    background-color:transparent;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.details.error {
+    background-color:transparent;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel Rooms</title>
+    <link rel="stylesheet" href="rooms.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="project.html">Home</a></li>
+            <!-- <li><a href="#">Rooms</a></li>
+            <li><a href="#">Dining</a></li> -->
+            <li><a href="events.html">Events</a></li>
+            <li><a href="login.html">Spa</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <li><a href="project.html">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-slideshow">
+        <div class="hero-slide">
+            <img src="https://images.unsplash.com/photo-1568495248636-6432b97bd949?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Room 1">
+        </div>
+        <div class="hero-slide">
+            <img src="https://images.unsplash.com/photo-1621891333819-00c206ec8994?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Room 2">
+        </div>
+        <div class="hero-slide">
+            <img src="https://images.unsplash.com/photo-1559841644-08984562005a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Room 3">
+        </div>
+    </div>
+    <div class="hero-content">
+        <h1>Our Luxury Rooms</h1>
+        <p>Experience unparalleled comfort and elegance</p>
+    </div>
+</section>
+
+<section class="rooms">
+    <h2>Choose Your Room</h2>
+    <div class="room-gallery">
+        <div class="room">
+            <img src="https://plus.unsplash.com/premium_photo-1661884238187-1c274b3c3413?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bHV4dXJ5JTIwc3VpdGV8ZW58MHx8MHx8fDA%3D" alt="Luxury Suite">
+            <h3>Luxury Suite</h3>
+            <p>Starting at ₹35000/night</p>
+            <button class="btn-15"><span><a href="login.html">Book Now</a></span></button>
+        </div>
+        <div class="room">
+            <img src="https://images.unsplash.com/photo-1507038772120-7fff76f79d79?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGhvdGVsJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D" alt="Deluxe Room">
+            <h3>Deluxe Room</h3>
+            <p>Starting at ₹25000/night</p>
+            <button class="btn-15"><span><a href="login.html">Book Now</a></span></button>
+        </div>
+        <div class="room">
+            <img src="StandardRoom.jpeg" alt="Standard Room">
+            <h3>Standard Room</h3>
+            <p>Starting at ₹15000/night</p>
+            <button class="btn-15"><span><a href="login.html">Book Now</a></span></button>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <p>&copy; 2024 Luxury Hotel Bengal. All rights reserved.</p>
+    <p>Contact us at abc@grandhotels.in</p>
+    <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+    </ul>
+</footer>
+
+<script>
+    // JavaScript to create the slideshow effect
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("hero-slide");
+
+    function showSlides() {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block"; 
+        setTimeout(showSlides, 1000); // Change image every 1 second
+    }
+
+    showSlides(); // Initialize the slideshow
+</script>
+
+</body>
+</html>
